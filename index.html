@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>Famous Developers of All Times</title>
+    <link href="https://fonts.googleapis.com/css?family=KoHo|Major+Mono+Display" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Famous Developers Of All Times</div>
+        <div class="panels">
+            <div class="panel p1">
+                <div class="bg">
+                    <div class="bio"><span class="name">Dennis Ritchie</span> was an American computer scientist who is
+                        credited for
+                        shaping and pioneering the digital era. He created the most commonly used C programming
+                        language that is used today in various software applications, embedded system development,
+                        operating systems, and has influenced most modern programming languages.
+                        Dennis also co-created the UNIX operating system</div>
+                    <div class="line">...</div>
+                </div>
+            </div>
+            <div class="panel p2">
+                <div class="bg">
+                    <div class="bio"><span class="name">Bjarne Stroustrup</span> is a Danish computer scientist who is
+                        credited for the creation
+                        and the development of the widely used and highly successful C++ programming language. Bjarne
+                        is currently working as a Professor and holder of the College of Engineering Chair in Computer
+                        Science at Texas A&M University.</div>
+                    <div class="line">...</div>
+                </div>
+            </div>
+            <div class="panel p3">
+                <div class="bg">
+
+                    <div class="bio"> <span class="name">Brendan Eich</span> is an American technologist and creator of
+                        the JavaScript programming
+                        language. He co-founded the Mozilla project, the Mozilla Foundation and the Mozilla
+                        Corporation, and served as the Mozilla Corporation's chief technical officer and briefly its
+                        chief executive officer.</div>
+                    <div class="line">...</div>
+                </div>
+            </div>
+            <div class="panel p4">
+                <div class="bg">
+                    <div class="bio"><span class="name">Guido van Rossum</span> is a Dutch computer programmer who is
+                        the author of the popular
+                        Python programming language that is wildly used today. His creation of Python lead him to being
+                        declared a “Benevolent Dictator For Life”. Rossum had developed Python while working at Google,
+                        where he also created Mondrian (a code review system internally used by the Google) and
+                        Rietveld. After working for Google for 7 years, he is now working at Dropbox.</div>
+                    <div class="line">...</div>
+                </div>
+            </div>
+            <div class="panel p5">
+                <div class="bg">
+                    <div class="bio"><span class="name">Linus Benedict Torvalds</span> is a Finnish American software
+                        engineer, who was the
+                        principal driving force behind the development of the Linux kernel. Its creation itself is
+                        attributed towards him and he later became the chief architect of the Linux kernel. He also
+                        created the ever popular distrbuted version control system called Git in 2005</div>
+                    <div class="line">...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let ele = document.querySelectorAll('.panel');
+
+        function clickEvent() {
+            this.classList.toggle('active');
+            // setTimeout(0);
+            let name, bio = undefined;
+            // name = this.querySelector('.name');
+            bio = this.querySelector('.bg');
+            // setTimeout(transitEvent, 2000);
+
+
+            // name.classList.toggle('named');
+            bio.classList.toggle('named');
+            console.log(name);
+        }
+
+
+
+        ele.forEach(panel => panel.addEventListener('click', clickEvent));
+        // ele.forEach(panel => panel.addEventListener('transitionend', transitEvent));
+
+    </script>
+</body>
+
+</html>

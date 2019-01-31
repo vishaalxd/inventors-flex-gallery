@@ -1,0 +1,124 @@
+.title{
+    top: 5px;
+    /* bottom: 5px; */
+    position: absolute;
+    text-align: center;
+    /* margin: auto */
+    font-size: 21px;
+    font-weight: bolder;
+    width:100%;
+    font-family: 'major Mono Display', sans-serif;
+    color : rgba(1, 202, 252, 0.877);
+}
+
+body{
+    margin: 0;
+    /* z-index: 1; */
+    /* position: absolute; */
+    background: rgba(34, 34, 34, 0.979);
+}
+
+*{
+    color :whitesmoke;
+}
+
+.panels{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    /* flex:1; */
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.panel{
+    overflow: hidden;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    /* height:100vh; */
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid grey; */
+    height:100vh; 
+    flex-wrap: wrap;
+    padding: 14px;
+    background-position: center;
+    background-size: cover;
+    transition: flex 0.42s ease-in-out;
+   
+}
+
+.active{
+    transition: flex 0.42s ease-in-out;
+    flex:5;
+}
+
+.line{
+    font-size: 24px;
+}
+
+
+.p5{
+    background-image:url(torvalds.jpg);
+}
+
+
+.p4{
+    background-image:url(rossum.jpg);
+}
+
+.p3{
+    background-image:url(brendan.jpg);
+}
+
+
+.p2{
+    background-image:url(stroustrup.jpg);
+}
+
+
+.p1{
+    background-image:url(dennis.png);
+}
+
+
+
+
+.panel > *{
+    margin-top:20px;
+    justify-content: center;
+    display: flex;
+    width:100%;
+    text-align: justify;
+    flex-wrap: wrap;
+    font-family: 'KoHo', sans-serif;
+    transition: 1.2s ease-in-out;
+
+}
+
+.bio {
+    padding: 20px;
+}
+
+.bg{
+    background: rgba(27, 27, 27, 0.445);
+    border-radius: 10px 10px 10px 10px;
+    display: none;
+    min-height: 220px;
+    transition: 1.2s ease-in-out;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 18px;
+   
+    margin-bottom:20px;
+    /* display: none; */
+    transition: 1.2s ease-in-out;
+}
+
+.named{
+    transition: flex 1.2s ease-in-out;
+    display: flex;
+}
